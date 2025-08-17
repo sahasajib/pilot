@@ -1,0 +1,5 @@
+package globalrouter
+
+func GlobalROuter(){
+	
+}
