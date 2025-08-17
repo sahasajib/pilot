@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/sahasajib/pilot/cmd"
+)
 
 
-func Main(){
+func main(){
+	cmd.Serve()
 	fmt.Println("hello from pailot")
 }
