@@ -8,5 +8,6 @@ import (
 )
 
 func InitRoute(route *http.ServeMux, manager *middleware.Manager){
-	route.Handle("GET /user", manager.With(http.HandlerFunc(handler.User)))
+	route.Handle("GET /user", manager.With(http.HandlerFunc(handler.Users)))
+	route.Handle("POST /user", manager.With(http.HandlerFunc(handler.CreateUser)))
 }

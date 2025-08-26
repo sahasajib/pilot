@@ -1,13 +1,15 @@
 package main
 
 import (
-	"fmt"
+	
 
 	"github.com/sahasajib/pilot/cmd"
+	"github.com/sahasajib/pilot/database"
 )
 
 
 func main(){
+	database.InitDB()
 	cmd.Serve()
-	fmt.Println("hello from pailot")
+
 }
